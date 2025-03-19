@@ -5,12 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ParsePDF - Python Code</title>
     <link rel="stylesheet" href="style.css">
+    
     <!-- Highlight.js for Syntax Highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+
+    <!-- Dark Mode Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .dark-mode header {
+            background-color: #1e1e1e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .dark-mode pre {
+            background-color: #2e2e2e !important;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .dark-mode a {
+            color: #ffcc00;
+        }
+
+        .dark-mode .btn-primary {
+            background-color: #ff5722;
+            border: none;
+        }
+
+        /* Dark Mode Toggle Button */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            padding: 8px 12px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Dark Mode Toggle Button -->
+    <button id="darkModeToggle" class="dark-mode-toggle">Dark Mode</button>
 
     <header>
         <h1>ParsePDF - Python Script</h1>
@@ -58,6 +110,30 @@ else:
     <footer>
         <p>&copy; 2025 Shiboof | <a href="https://github.com/Shiboof/shiboof.github.io/tree/main/projects/parsePDF">GitHub Repo</a></p>
     </footer>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const darkModeToggle = document.getElementById("darkModeToggle");
+
+            // Check local storage for saved theme
+            if (localStorage.getItem("dark-mode") === "enabled") {
+                document.body.classList.add("dark-mode");
+            }
+
+            // Toggle dark mode
+            darkModeToggle.addEventListener("click", function () {
+                document.body.classList.toggle("dark-mode");
+
+                // Save user preference in local storage
+                if (document.body.classList.contains("dark-mode")) {
+                    localStorage.setItem("dark-mode", "enabled");
+                } else {
+                    localStorage.removeItem("dark-mode");
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
