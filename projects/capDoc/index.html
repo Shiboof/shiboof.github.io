@@ -5,38 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CapsDoc - Python Code</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Highlight.js for Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
 
     <header>
         <h1>CapsDoc - Python Script</h1>
-        <p>A quick tool for fully capitalizing excel documents content.</p>
-        <a href="https://github.com/shiboof/projects/capDoc" target="_blank">View on GitHub</a>
+        <p>A quick tool for fully capitalizing Excel document content.</p>
+        <a href="https://github.com/shiboof/capsdoc" target="_blank">View on GitHub</a>
     </header>
 
     <section>
-        <h2> code here </h2>
-        <pre>
-        <code>
+        <h2>CapsDoc Source Code</h2>
+        <pre><code class="language-python">
 import os
+import tkinter as tk
+from tkinter import filedialog
+from openpyxl import load_workbook
 
-def process_document(file_path):
-    with open(file_path, 'r') as file:
-        content = file.read()
-    return content.upper()
+def capitalize_excel(input_file, output_file):
+    # Load the workbook and modify in place
+    wb = load_workbook(input_file, data_only=False)
+    
+    # Process each sheet without losing formatting or images
+    for sheet in wb.worksheets:
+        for row in sheet.iter_rows():
+            for cell in row:
+                if isinstance(cell.value, str):
+                    cell.value = cell.value.upper()
+    
+    # Save the modified file
+    wb.save(output_file)
+    print(f"File saved as {output_file}")
 
-if __name__ == "__main__":
-    doc = "example.txt"
-    if os.path.exists(doc):
-        print(process_document(doc))
-    else:
-        print("File not found.")
-        </code>
-        </pre>
+def select_file():
+    root = tk.Tk()
+    root.withdraw()  # Hide the root window
+    file_path = filedialog.askopenfilename(title="Select an Excel File", filetypes=[("Excel files", "*.xlsx;*.xlsm")])
+    return file_path
+
+# Open file explorer to choose input file
+input_excel = select_file()
+if input_excel:
+    # Extract file name and create output path in Windows Downloads folder
+    base_name = os.path.basename(input_excel)
+    name, ext = os.path.splitext(base_name)
+    output_excel = os.path.join(os.path.expanduser("~"), "Downloads", f"{name}-cap{ext}")
+    
+    capitalize_excel(input_excel, output_excel)
+else:
+    print("No file selected.")
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Download Source Code</h2>
+        <a href="capsdoc.py" download class="btn btn-primary">Download capsdoc.py</a>
     </section>
 
     <footer>
-        <p>&copy; 2025 Shiboof | <a href="https://github.com/shiboof/projects/capDoc">GitHub Repo</a></p>
+        <p>&copy; 2025 Shiboof | <a href="https://github.com/shiboof/capsdoc">GitHub Repo</a></p>
     </footer>
 
 </body>
