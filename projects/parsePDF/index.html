@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParsePDF - Python Code</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Highlight.js for Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+
+    <header>
+        <h1>ParsePDF - Python Script</h1>
+        <p>A tool to parse text from PDFs, even if image-based.</p>
+        <a href="https://github.com/Shiboof/shiboof.github.io/tree/main/projects/parsePDF" target="_blank">View on GitHub</a>
+    </header>
+
+    <section>
+        <h2>ParsePDF Source Code</h2>
+        <pre><code class="language-python">
+import pytesseract
+from pdf2image import convert_from_path
+import PyPDF2
+import os
+
+def extract_text_from_pdf(pdf_path):
+    text = ""
+    with open(pdf_path, "rb") as file:
+        reader = PyPDF2.PdfReader(file)
+        for page in reader.pages:
+            text += page.extract_text() or ""
+
+    if not text.strip():
+        # If text extraction failed, use OCR
+        images = convert_from_path(pdf_path)
+        text = "\n".join(pytesseract.image_to_string(img) for img in images)
+    
+    return text
+
+# Example usage
+pdf_path = "example.pdf"
+if os.path.exists(pdf_path):
+    extracted_text = extract_text_from_pdf(pdf_path)
+    print(extracted_text)
+else:
+    print("PDF file not found.")
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Download Source Code</h2>
+        <a href="parsePDF.py" download class="btn btn-primary">Download parsePDF.py</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shiboof | <a href="https://github.com/Shiboof/shiboof.github.io/tree/main/projects/parsePDF">GitHub Repo</a></p>
+    </footer>
+
+</body>
+</html>
