@@ -67,6 +67,19 @@
         #skills .col-md-4:hover {
             transform: scale(1.1);
         }
+
+        /* Darken the Previous & Next Arrows */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(30%); /* Darkens the arrows */
+        }
+
+        /* Adjust Hover Effect to Make Them Stand Out More */
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: rgba(0, 0, 0, 0.2); /* Light gray background on hover */
+            border-radius: 50%; /* Rounded background */
+        }
     </style>
 </head>
 <body>
