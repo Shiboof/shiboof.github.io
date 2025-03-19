@@ -128,24 +128,37 @@
 
 
     <!-- Projects Section -->
-<section id="projects" class="section text-center">
-    <div class="container">
-        <h2>Projects</h2>
-        <p>Check out some of my work:</p>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <h4>Capitalize ExcelDoc App</h4>
-                <p>A quick tool to capitalize every character in ExcelDocs.</p>
-                <a href="projects/capDoc/" class="btn btn-outline-dark">View Project</a>
-            </div>
-            <div class="col-md-6">
-                <h4>ParsePDF</h4>
-                <p>A tool to parse text from PDFs, even if image-based.</p>
-                <a href="projects/parsePDF/" class="btn btn-outline-dark">View Project</a>
+    <section id="projects" class="section text-center">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Check out some of my work:</p>
+
+            <!-- Bootstrap Project Carousel -->
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h4>Capitalize ExcelDoc App</h4>
+                        <p>A quick tool to capitalize every character in ExcelDocs.</p>
+                        <a href="projects/capDoc/" class="btn btn-outline-dark">View Project</a>
+                    </div>
+                    <div class="carousel-item">
+                        <h4>ParsePDF</h4>
+                        <p>A tool to parse text from PDFs, even if image-based.</p>
+                        <a href="projects/parsePDF/" class="btn btn-outline-dark">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <a class="carousel-control-prev" href="#projectCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#projectCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
 
     <!-- Contact Section -->
 <section id="contact" class="section text-center">
