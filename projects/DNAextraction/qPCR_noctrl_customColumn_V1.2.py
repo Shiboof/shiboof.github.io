@@ -2,9 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Sep 22 10:13:25 2021
-@author: bwang@mgi-tech.com
 Edited on Wed Sep 29 2022
-@edited by: cameron.rogers@greenanalyticsllc.com
+@edited by: shiboof
 """
 ##init, posi map and shake binding 
 #three write methods:empty-None; pcr-"pcr"; kit-"kit" ;cannot grasp/loose-"useless"  shake-([,"shake"])
