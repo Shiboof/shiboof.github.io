@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\roger\\Desktop\\PythonProjects\\web_scraper\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8706EB9C-56C7-4B80-891A-DB76C02A2C45}|web_scraper.pyproj|C:\\Users\\roger\\Desktop\\PythonProjects\\web_scraper\\web_scraper.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8706EB9C-56C7-4B80-891A-DB76C02A2C45}|web_scraper.pyproj|solutionrelative:web_scraper.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "web_scraper.py",
+              "DocumentMoniker": "C:\\Users\\roger\\Desktop\\PythonProjects\\web_scraper\\web_scraper.py",
+              "RelativeDocumentMoniker": "web_scraper.py",
+              "ToolTip": "C:\\Users\\roger\\Desktop\\PythonProjects\\web_scraper\\web_scraper.py",
+              "RelativeToolTip": "web_scraper.py",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-26T16:30:46.281Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

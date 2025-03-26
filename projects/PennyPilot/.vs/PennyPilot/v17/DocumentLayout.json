@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\roger\\Desktop\\PythonProjects\\PennyPilot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE310777-691F-4FA5-A1DF-73D092C8FEC4}|PennyPilot.pyproj|C:\\Users\\roger\\Desktop\\PythonProjects\\PennyPilot\\ui.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BE310777-691F-4FA5-A1DF-73D092C8FEC4}|PennyPilot.pyproj|solutionrelative:ui.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE310777-691F-4FA5-A1DF-73D092C8FEC4}|PennyPilot.pyproj|C:\\Users\\roger\\Desktop\\PythonProjects\\PennyPilot\\db.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BE310777-691F-4FA5-A1DF-73D092C8FEC4}|PennyPilot.pyproj|solutionrelative:db.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE310777-691F-4FA5-A1DF-73D092C8FEC4}|PennyPilot.pyproj|C:\\Users\\roger\\Desktop\\PythonProjects\\PennyPilot\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BE310777-691F-4FA5-A1DF-73D092C8FEC4}|PennyPilot.pyproj|solutionrelative:main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ui.py",
+              "DocumentMoniker": "C:\\Users\\roger\\Desktop\\PythonProjects\\PennyPilot\\ui.py",
+              "RelativeDocumentMoniker": "ui.py",
+              "ToolTip": "C:\\Users\\roger\\Desktop\\PythonProjects\\PennyPilot\\ui.py",
+              "RelativeToolTip": "ui.py",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-24T22:21:44.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "db.py",
+              "DocumentMoniker": "C:\\Users\\roger\\Desktop\\PythonProjects\\PennyPilot\\db.py",
+              "RelativeDocumentMoniker": "db.py",
+              "ToolTip": "C:\\Users\\roger\\Desktop\\PythonProjects\\PennyPilot\\db.py",
+              "RelativeToolTip": "db.py",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-24T22:21:37.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.py",
+              "DocumentMoniker": "C:\\Users\\roger\\Desktop\\PythonProjects\\PennyPilot\\main.py",
+              "RelativeDocumentMoniker": "main.py",
+              "ToolTip": "C:\\Users\\roger\\Desktop\\PythonProjects\\PennyPilot\\main.py",
+              "RelativeToolTip": "main.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-24T22:18:09.386Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
